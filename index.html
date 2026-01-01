@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~*~ Welcome to Oliv's Realm ~*~</title>
+    <style>
+        body {
+            background-color: #000080; 
+            background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); 
+            color: #00FF00; 
+            font-family: "Comic Sans MS", "Chalkboard SE", cursive;
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            border: 5px ridge #FF0000;
+            background: #C0C0C0;
+            color: #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .blink {
+            animation: blinker 1s linear infinite;
+            color: yellow;
+            font-weight: bold;
+        }
+
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            color: #000;
+            border: 3px double #000;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background: #808080;
+            padding: 5px;
+            border: 2px inset #fff;
+            margin-bottom: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px;
+            border: 1px solid black;
+            background: #666;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background: yellow;
+            color: red;
+        }
+
+        .hero-section {
+            text-align: center;
+            border: 2px dashed blue;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .oliv-pic {
+            border: 8px solid gold;
+            outline: 4px solid red;
+            max-width: 100%;
+            height: auto;
+            filter: contrast(150%);
+        }
+
+        .content-grid {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        @media (min-width: 600px) {
+            .content-grid {
+                flex-direction: row;
+            }
+            .sidebar {
+                width: 200px !important;
+                flex-shrink: 0;
+            }
+        }
+
+        .column {
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .sidebar {
+            background: #ffffcc;
+            width: 100%;
+        }
+
+        marquee {
+            background: #000;
+            color: #FF00FF;
+            font-family: "Courier New", monospace;
+            padding: 5px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .hit-counter {
+            background: #000;
+            color: #00FF00;
+            padding: 5px;
+            font-family: "Courier New", Courier, monospace;
+            border: 2px solid #808080;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        #ram-zone {
+            background: #eee;
+            border: 2px inset #fff;
+            padding: 10px;
+            margin-top: 15px;
+            display: none;
+        }
+        
+        .progress-container {
+            width: 100%;
+            height: 30px;
+            background: #ccc;
+            border: 2px inset #fff;
+            position: relative;
+            margin: 10px 0;
+        }
+        
+        #progress-bar {
+            width: 0%;
+            height: 100%;
+            background: #000080;
+            transition: width 0.1s linear;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 11px;
+            border-top: 1px solid #000;
+            padding-top: 10px;
+        }
+
+        .best-viewed img {
+            width: 70px;
+        }
+
+        button {
+            background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+            border: 2px outset #fff;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-family: "Impact", sans-serif;
+            text-transform: uppercase;
+        }
+
+        button:active {
+            border: 2px inset #fff;
+        }
+
+        #hacker-msg {
+            display: none;
+            color: red;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+            border: 5px solid red;
+            padding: 20px;
+            background: black;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="text-shadow: 2px 2px #ff00ff; font-size: 24px;">WELCOME TO THE unOFFICIAL OLIV HOMEPAGE</h1>
+        <p class="blink">*** UNDER CONSTRUCTION ***</p>
+    </header>
+
+    <marquee scrollamount="8">THIS IS OLIV - THIS IS OLIV - THIS IS OLIV - 2002 INTERNET IS THE BEST INTERNET - 100% SECURE SITE</marquee>
+
+    <div class="main-container">
+        <nav>
+            <a href="#">HOME</a>
+            <a href="javascript:startRamDownload()">DOWNLOAD RAM</a>
+        </nav>
+
+        <div class="content-grid">
+            <div class="column sidebar">
+                <h3>SITE INFO</h3>
+                <p style="font-size: 11px;"><b>Jan 1, 2026:</b><br>Mobile support added with "smart" phones!</p>
+                <hr>
+                <center>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9l9jsYgkWtSfjDhJrNttReGRtJ9b_5qXk5Q&s" alt="Construction Man" width="50">
+                </center>
+                <center>
+                    <div class="hit-counter">
+                        VISITOR #00042069
+                    </div>
+                </center>
+            </div>
+
+            <div class="column">
+                <div class="hero-section">
+                    <h2 style="color: blue; text-decoration: underline; font-size: 18px;">LOOK AT THIS COOL PIC I TOOK</h2>
+                    <img 
+                        src="https://oliv.tsmarty.xyz/Screenshot%202026-01-01%20172052.png" 
+                        alt="Oliv Project" 
+                        class="oliv-pic"
+                    >
+                    <p><i>Check out my screen capture!</i></p>
+                </div>
+
+                <div id="ram-zone">
+                    <b id="status-text">Downloading 128GB DDR5 RAM...</b>
+                    <div class="progress-container">
+                        <div id="progress-bar"></div>
+                    </div>
+                    <span id="percent-text">0%</span>
+                </div>
+
+                <p>Oliv is my new project. It is very advanced. Please do not steal my graphics or I will tell my dad.</p>
+                
+                <table border="1" bgcolor="#eeeeee" width="100%" style="font-size: 12px;">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Coolness</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td>YES!</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright (c) 20202-2026 OLIV ENTERPRISES.</p>
+            <div class="best-viewed">
+                <p>Best viewed in 800x600 resolution</p>
+            </div>
+        </div>
+    </div>
+
+    <center style="margin-top: 20px; padding-bottom: 20px;">
+        <img src="https://i.imgur.com/rYrrSjL.gif" alt="Fire" height="40">
+        <span style="font-size: 25px; color: orange; font-weight: bold;">HOT! HOT! HOT!</span>
+        <img src="https://i.imgur.com/rYrrSjL.gif" alt="Fire" height="40">
+    </center>
+
+    <div id="hacker-msg">
+        HA HA HA!!<br>
+        I GOT ALL UR DATA!!<br>
+        HAHAHAHAH!!!<br>
+        <br>
+        <button onclick="location.reload()">NOOOOOOO!!!</button>
+    </div>
+
+    <script>
+        function startRamDownload() {
+            const zone = document.getElementById('ram-zone');
+            const bar = document.getElementById('progress-bar');
+            const pText = document.getElementById('percent-text');
+            const sText = document.getElementById('status-text');
+            const hacker = document.getElementById('hacker-msg');
+            
+            zone.style.display = 'block';
+            let width = 0;
+            
+            const interval = setInterval(() => {
+                if (width >= 100) {
+                    clearInterval(interval);
+                    sText.innerText = "Download Complete!";
+                    setTimeout(() => {
+                        hacker.style.display = 'block';
+                    }, 500);
+                } else {
+                    width += Math.random() * 5;
+                    if (width > 100) width = 100;
+                    bar.style.width = width + '%';
+                    pText.innerText = Math.floor(width) + '%';
+                }
+            }, 100);
+        }
+    </script>
+
+</body>
+</html>
